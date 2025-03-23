@@ -1,0 +1,43 @@
+.container {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    background-color: blueviolet;
+    transition: transform 1s ease, background-color 0.5s ease;
+}
+
+.container:hover .square {
+    transform: translateX(200px);
+    background-color: orange;
+}
+
+.bigSquare {
+    height: 200px;
+    width: 200px;
+    border: 3px solid pink;
+    background-color: aquamarine;
+    transition: border-color 1s ease-in, transform 1s ease-in-out;
+}
+
+.bigSquare:hover {
+    border-color: violet;
+    transform: rotate(15deg) scale(1.1);
+}
+
+div {
+    height: 150px;
+    width: 300px;
+    background: linear-gradient(60deg, red, yellow, blue);
+    transition: all 2s ease-in-out;
+}
+
+div:hover {
+    background: linear-gradient(10deg, purple, cyan, pink);
+    margin-left: 100px;
+    transform: rotate(360deg) scale(0.8);
+}
